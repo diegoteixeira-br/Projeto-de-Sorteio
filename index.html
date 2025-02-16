@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+<<<<<<< HEAD
     <title>Sorteio da Feira</title>
+=======
+    <title>Sorteio</title>
+>>>>>>> ef51ed8344e63fa2e7a21cac94a2eb730955a7c1
 </head>
 <body>
     <img src="./assets/Sorteio! (2).png">
 
     <h2>Sortear um Número</h2>
-    <div>
-        <input placeholder="entre" class="input-min" type="number">
-        <input placeholder="e" class="input-max" type="number">
+
+    <div class="container">
+        <div class="input-container">
+            <input placeholder="Entre" class="input-min" type="number">
+            <input placeholder="E" class="input-max" type="number">
+        </div>
+
+        <button onclick="generateNumber()">Sortear</button>
     </div>
 
-    <button onclick="generateNumber()">Sortear</button>
-    
+    <script src="./scripts.js"></script>
 </body>
-<script src="./scripts.js"></script>
 </html>

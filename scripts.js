@@ -1,13 +1,21 @@
 function generateNumber() {
-    const min = Math.ceil(document.querySelector(".input-min").value)
-    const max = Math.floor(document.querySelector(".input-max").value)
+    const minInput = document.querySelector(".input-min");
+    const maxInput = document.querySelector(".input-max");
+
+    const min = Math.ceil(Number(minInput.value));
+    const max = Math.floor(Number(maxInput.value));
+
+    if (isNaN(min) || isNaN(max)) {
+        alert("Por favor, preencha ambos os campos com números válidos.");
+        return;
+    }
 
     if (min >= max) {
-        alert("O valor minimo tem que ser MENOR que o valor máximo")
+        alert("O valor mínimo tem que ser MENOR que o valor máximo.");
+        return;
     }
-    else {
-            const result = Math.floor(Math.random() * (max - min) + min);
 
-            alert(result)
-        }
+    const result = Math.floor(Math.random() * (max - min + 1)) + min;
+
+    alert(`Número sorteado: ${result}`);
 }

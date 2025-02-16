@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
     * {
@@ -114,3 +115,121 @@
             font-size: 20px;
         }
     }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.input-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 14px;
+    height: 50px;
+    flex: 1;
+    min-width: 120px;
+    max-width: 150px;
+    padding-left: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+button {
+    background: #AEC346;
+    box-shadow: 0px 18px 40px rgba(174, 195, 70, 0.35);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    height: 55px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:active {
+    opacity: 0.8;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 22px;
+        line-height: 28px;
+        margin-top: 15px;
+    }
+
+    .input-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 90%;
+        max-width: 200px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    button {
+        height: 50px;
+        font-size: 20px;
+    }
+}
+>>>>>>> ef51ed8344e63fa2e7a21cac94a2eb730955a7c1
